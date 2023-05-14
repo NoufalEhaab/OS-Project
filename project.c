@@ -32,6 +32,39 @@ void kill_process()
     kill(pid, SIGTERM);
 }
 
+
+// Kill all processes that have been running for more than a certain time
+void kill_processes_by_time() {
+    int time_threshold;
+    printf("Enter time threshold (in seconds): ");
+    scanf("%d", &time_threshold);
+    char command[256];
+    snprintf(command, sizeof(command), "ps -eo pid,etimes | awk '$2 > %d { print $1 }' | xargs kill", time_threshold);
+    system(command);
+}
+
+// Show the process hierarchy of a specific process
+void show_process_hierarchy() {
+    int pid;
+    printf("Enter process ID: ");
+    scanf("%d", &pid);
+    char command[256];
+    snprintf(command, sizeof(command), "pstree -p %d", pid);
+    system(command);
+}
+
+// List all processes that have a certain string in their command line
+void list_processes_by_string() {
+    char string[256];
+    printf("Enter string to search for: ");
+    scanf("%s", string);
+    char command[256];
+    snprintf(command, sizeof(command), "ps aux | grep %s", string);
+    system(command);
+}
+
+
+
 // Main menu
 void print_menu()
 {
