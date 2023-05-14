@@ -5,6 +5,43 @@
 #include <signal.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+// List all open files for a process
+void list_open_files()
+{
+    int pid;
+    printf("Enter process ID: ");
+    scanf("%d", &pid);
+    char command[256];
+    snprintf(command, sizeof(command), "ls -l /proc/%d/fd", pid);
+    system(command);
+}
+
+// List all open network connections and their corresponding process
+void list_network_connections()
+{
+    system("netstat -tunap | grep ESTABLISHED");
+}
+
+// Monitor CPU usage in real-time
+void monitor_cpu_usage()
+{
+    pid_t pid = fork();
+    if (pid == 0)
+    {
+        execlp("top", "top", NULL);
+        perror("execlp");
+        exit(EXIT_FAILURE);
+    }
+    else if (pid > 0)
+    {
+        wait(NULL);
+    }
+    else
+    {
+        perror("fork");
+        exit(EXIT_FAILURE);
+    }
+}
 
 // List all running processes
 void list_processes()
