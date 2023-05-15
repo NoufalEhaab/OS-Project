@@ -100,7 +100,23 @@ void list_processes_by_string() {
     system(command);
 }
 
+// Show memory usage details
+void show_memory_usage()
+{
+    system("free -h");
+}
 
+// Show disk usage details
+void show_disk_usage()
+{
+    system("df -h");
+}
+
+// Show the number of running processes for each user
+void show_running_processes_per_user()
+{
+    system("ps -eo user=|sort|uniq -c");
+}
 
 // Main menu
 void print_menu()
