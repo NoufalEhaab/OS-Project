@@ -55,3 +55,12 @@ To use the program, follow these steps:
 ## Conclustion
 
 This C code provides a versatile program for managing and monitoring processes and system resources. With its menu-driven interface, users can easily perform various tasks such as listing running processes, examining process details, terminating processes, monitoring CPU usage, viewing memory and disk usage details, and more. By utilizing system calls and commands, the code interacts with the underlying operating system to retrieve process information and execute system operations. The program's modular structure and menu-driven approach make it user-friendly and adaptable for different system administration and monitoring tasks.
+
+## Screenshots
+
+| | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+| <img class="img-fluid" width="1604" src="Screenshots/Screenshot%20from%202023-05-17%2017-48-29.png">  | <img class="img-fluid" width="1604" src="Screenshots/Screenshot%20from%202023-05-17%2017-48-48.png"> | <img class="img-fluid" width="1604" src="Screenshots\Screenshot from 2023-05-17 17-50-28.png"> | 
+<img class="img-fluid" width="1604" src="Screenshots\Screenshot from 2023-05-17 17-51-06.png"> | <img class="img-fluid" width="1604" src="Screenshots\Screenshot from 2023-05-17 17-51-11.png"> | <img class="img-fluid" width="1604" src="Screenshots\Screenshot from 2023-05-17 17-51-28.png"> |
+<img class="img-fluid" width="1604" src="Screenshots\Screenshot from 2023-05-17 17-51-50.png"> | <img class="img-fluid" width="1604" src="Screenshots\Screenshot from 2023-05-17 17-52-02.png"> | <img class="img-fluid" width="1604" src="Screenshots\Screenshot from 2023-05-17 17-52-19.png"> |
+<img class="img-fluid" width="1604" src="Screenshots\Screenshot from 2023-05-17 17-53-37.png"> | <img class="img-fluid" width="1604" src="Screenshots\Screenshot from 2023-05-17 17-55-17.png"> |
