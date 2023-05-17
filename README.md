@@ -52,6 +52,6 @@ To use the program, follow these steps:
 7. After completing a task, the menu will be displayed again for further selection.
 8. To exit the program, choose option 13 from the menu.
 
-## Conclustion
+## Conclusion
 
 This C code provides a versatile program for managing and monitoring processes and system resources. With its menu-driven interface, users can easily perform various tasks such as listing running processes, examining process details, terminating processes, monitoring CPU usage, viewing memory and disk usage details, and more. By utilizing system calls and commands, the code interacts with the underlying operating system to retrieve process information and execute system operations. The program's modular structure and menu-driven approach make it user-friendly and adaptable for different system administration and monitoring tasks.
